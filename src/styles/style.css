@@ -8,11 +8,12 @@
         margin: 0;
         padding: 0;
         width: 100%;
+         height: 100%;  /* 이거 안넣어서 스크롤바 2개 생겼음 */
         overflow-x: hidden; /* 수평 스크롤바 방지 */
     }
 
     .header, .imgs, .img-text, .about-container {
-        width: 100%; /* 100vw 대신 100% */
+        width: 100%;
         box-sizing: border-box;
     }
     ul {
@@ -31,7 +32,7 @@
         display: flex;
         justify-content: center;
         position: fixed;
-        width : 100vw;
+        width : 100%;
         height: 80px;
         top: 0;
         z-index: 10;
@@ -58,13 +59,13 @@
         display: inline-block;
         margin-left: 4rem;
     }
-  .container {
+    .container {
     height: 1000px;
     position: relative; /* 자식의 absolute 위치를 제한 */
     overflow: hidden; /* 넘치는 부분 숨김 */
-}
+    }
 
-.imgs {
+    .imgs {
     width: 100%;
     height: 1000px; 
     filter: brightness(30%);
@@ -74,7 +75,7 @@
     object-fit: cover; 
     object-position: center bottom;
     
-}
+    }
     .img-text {
         width: 100vw;
         margin-top: 40%;
@@ -89,15 +90,98 @@
 
     .div-container {
         margin: 0 auto;
+        padding-top: 50px;
         width: 80%; 
-        height: 80px;
+        height: 100%;
         top: 0;
     }
-    .about-container > p{
+    .about-container > p {
         font-family: 'GongGothicBold';
         text-decoration-line: underline;
         text-align: center;
-        color: #000;  
-        font-size:44px;
+        color: #000;
+        font-size: 44px;
     }
 
+    .skill-container > p {
+        font-family: 'GongGothicBold';
+        text-decoration-line: underline;
+        text-align: center;
+        color: #000;
+        font-size: 44px;
+    }
+
+    .about-container {
+        max-width: 1200px; 
+        margin: 0 auto;
+        position: relative 
+    }
+
+    .about-container .w-full {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem; 
+    }
+
+    .about-container .icon-wrapper {
+        flex: 0 0 calc(33.33% - 1rem);
+        max-width: calc(33.33% - 1rem);
+        box-sizing: border-box;
+        display: flex;
+    }
+
+    .about-container .icon {
+        width: 30px;
+        height: 30px; 
+         object-fit: contain; 
+    }
+    .icon-wrapper > span  {
+        padding: 1% 0  0 5%;
+        align-items: center;
+        color: #000;
+    }
+     .icon-wrapper > p  {
+        margin-top: 0px;
+        padding: 1% 0  0 5%;
+        align-items: center;
+        color: #000;
+    }
+    .skill-box {
+        width: 100%;
+        height: 500px;
+        border: 1px solid #6b7280
+    }
+    
+    .category {
+    margin-bottom: 20px;
+    }
+    .category > h2 {
+        color: #000;
+    }
+    .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .skill {
+        padding: 8px 15px;
+        border-radius: 15px;
+        color: #000;
+        font-weight: bold;
+        font-size: 0.9em;
+    }
+
+    
+    
+    .footer {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        background-color: #222;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+    }
+    

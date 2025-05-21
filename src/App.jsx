@@ -1,7 +1,7 @@
 import Header from './component/header'
-import Footer from './component/footer'
 import MainImg from './component/MainImg'
 import Container from './component/Container'
+import Footer from './component/Footer'
 
 function App() {
 
