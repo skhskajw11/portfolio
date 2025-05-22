@@ -59,23 +59,21 @@
         display: inline-block;
         margin-left: 4rem;
     }
-    .container {
-    height: 1000px;
-    position: relative; /* 자식의 absolute 위치를 제한 */
-    overflow: hidden; /* 넘치는 부분 숨김 */
-    }
+.container {
+    position: relative;
+    height: 100vh; 
+}
 
-    .imgs {
+.imgs {
+    height: 100%;
     width: 100%;
-    height: 1000px; 
     filter: brightness(30%);
-    position: absolute;
     top: 0; 
     z-index: -1;
-    object-fit: cover; 
-    object-position: center bottom;
-    
-    }
+    object-fit: cover;
+    object-position: center;
+    position: absolute; 
+}
     .img-text {
         width: 100vw;
         margin-top: 40%;
@@ -91,7 +89,7 @@
     .div-container {
         margin: 0 auto;
         padding-top: 50px;
-        width: 80%; 
+        width: 60%; 
         height: 100%;
         top: 0;
     }
@@ -147,9 +145,12 @@
         color: #000;
     }
     .skill-box {
+        padding: 20px auto;
         width: 100%;
         height: 500px;
-        border: 1px solid #6b7280
+        border-radius: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 0 .5rem 0 rgba(68,68,68,.4);
     }
     
     .category {
@@ -172,8 +173,45 @@
         font-size: 0.9em;
     }
 
-    
-    
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    .text {
+        font-family: 'GongGothicBold';
+        text-decoration-line: underline;
+        text-align: center;
+        color: #000;
+        font-size: 44px;
+    }
+    .project-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+        gap: 30px;
+        height:  300px;
+        border-radius:20px;
+        background-color: #ffffff;
+        box-shadow: 0 0 .5rem 0 rgba(68,68,68,.4);
+    }
+
+    @media (min-width: 1332px) {
+    .project-box {
+            flex: 1 1 48%;
+            max-width:48%;
+    }
+}
+    @media (max-width: 1331px) {
+    .project-box {
+            flex: 1 1 100%;
+            max-width:100%;
+    }
+}
+
+    .project-box > p {
+        color: #000;
+    }
+
     .footer {
         position: relative;
         width: 100%;
