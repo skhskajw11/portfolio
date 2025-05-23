@@ -8,19 +8,15 @@
         margin: 0;
         padding: 0;
         width: 100%;
-         height: 100%;  /* 이거 안넣어서 스크롤바 2개 생겼음 */
         overflow-x: hidden; /* 수평 스크롤바 방지 */
     }
 
     .header, .imgs, .img-text, .about-container {
-        width: 100%;
+        width: 100vw;
         box-sizing: border-box;
     }
-    ul {
+    ul, li {
         list-style: none;
-    }
-    li {
-    list-style-type: none;
     }
     a {
         text-decoration: none;
@@ -32,11 +28,11 @@
         display: flex;
         justify-content: center;
         position: fixed;
-        width : 100%;
-        height: 80px;
+        width : 100vw;
+        height: 5rem;
         top: 0;
         z-index: 10;
-        box-shadow: 0px 0px 20px 0px rgba(163, 174, 184, 0.7);
+        box-shadow: 0 0 1.25rem 0 rgba(163, 174, 184, 0.7);
     }
     .headerObj {
         display: flex;
@@ -47,7 +43,7 @@
         margin: 0;
     }
     .logo {
-        font-size: 32px;
+        font-size: 2rem;
         color: #000;
     }
 
@@ -59,36 +55,40 @@
         display: inline-block;
         margin-left: 4rem;
     }
-.container {
-    position: relative;
-    height: 100vh; 
-}
+    .container {
+        position: relative;
+        height: 100%; 
+        padding-top: 5rem;
+    }
 
-.imgs {
-    height: 100%;
-    width: 100%;
-    filter: brightness(30%);
-    top: 0; 
-    z-index: -1;
-    object-fit: cover;
-    object-position: center;
-    position: absolute; 
-}
+    .imgs {
+        max-height:1080px;
+        height: 100%;
+        width: 100%;
+        filter: brightness(30%);
+        top: 0; 
+        z-index: 0;
+        object-fit: cover;
+        object-position: center;
+        position: absolute; 
+    }
     .img-text {
+        position: relative;
         width: 100vw;
         margin-top: 40%;
         margin-left: 60%;
-        font-size: 40px;
+        font-size: 2.5rem;
         color: #ffffff;
         font-family: 'GongGothicBold';
+        z-index: 5;
     }
     .img-text p {
-        margin:  20px 0px 20px 0;
+        margin:  1.25rem 0 1.25rem 0;
     }
 
     .div-container {
         margin: 0 auto;
-        padding-top: 50px;
+        padding-top: 3rem;
         width: 60%; 
         height: 100%;
         top: 0;
@@ -98,7 +98,7 @@
         text-decoration-line: underline;
         text-align: center;
         color: #000;
-        font-size: 44px;
+        font-size: 2.75rem;
     }
 
     .skill-container > p {
@@ -106,13 +106,15 @@
         text-decoration-line: underline;
         text-align: center;
         color: #000;
-        font-size: 44px;
+        font-size: 2.75rem;
     }
 
     .about-container {
-        max-width: 1200px; 
         margin: 0 auto;
-        position: relative 
+        padding-top: 3rem;
+        width: 80%; 
+        height: 100%;
+        top: 0;
     }
 
     .about-container .w-full {
@@ -129,8 +131,8 @@
     }
 
     .about-container .icon {
-        width: 30px;
-        height: 30px; 
+        width: 2rem;
+        height: 2rem; 
          object-fit: contain; 
     }
     .icon-wrapper > span  {
@@ -139,39 +141,53 @@
         color: #000;
     }
      .icon-wrapper > p  {
-        margin-top: 0px;
+        margin-top: 0;
         padding: 1% 0  0 5%;
         align-items: center;
         color: #000;
     }
     .skill-box {
-        padding: 20px auto;
+        padding: 1.25rem auto;
         width: 100%;
-        height: 500px;
+        height: 31rem;
         border-radius: 20px;
         background-color: #ffffff;
         box-shadow: 0 0 .5rem 0 rgba(68,68,68,.4);
     }
     
     .category {
-    margin-bottom: 20px;
+    margin: 1.25rem;
     }
-    .category > h2 {
+    .category > h1 {
         color: #000;
     }
     .skills-list {
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 0.5rem;
     }
 
     .skill {
-        padding: 8px 15px;
-        border-radius: 15px;
+        padding: 0.5rem 1rem;
+        border-radius: 1rem;
         color: #000;
         font-weight: bold;
-        font-size: 0.9em;
+        font-size: 0.9rem;
     }
+    .box{
+        padding: .25rem .75rem;
+    }
+
+    .language1 {color: #d10000; border:1px solid #0d6eb6;}
+    .language2 {background-color: #ffe300;}
+    .language3 {background-color: #00bee9;}
+    .front1 {color:#00bee9; border:1px solid #00bee9;}
+    .front2 {background-color: #9900ff;}
+    .front3 {background-color: #e6e6e6;}
+    .front4 {background-color: #1e2e3b;}
+    .back1 {color:#5fb832; border:1px solid #5fb832;}
+    .back2 {color:#2aaa84; border:1px solid #19b688;}
+    .back3 {color:#5fb832; border:1px solid #5fb832;}
 
     .project-container {
         display: flex;
@@ -183,14 +199,14 @@
         text-decoration-line: underline;
         text-align: center;
         color: #000;
-        font-size: 44px;
+        font-size: 2.75rem;
     }
     .project-box {
         flex: 1 1 100%;
         max-width: 100%;
-        gap: 30px;
-        height:  300px;
-        border-radius:20px;
+        gap: 2rem;
+        height: 29rem;
+        border-radius:1.25rem;
         background-color: #ffffff;
         box-shadow: 0 0 .5rem 0 rgba(68,68,68,.4);
     }
@@ -212,10 +228,23 @@
         color: #000;
     }
 
-    .footer {
-        position: relative;
+    .archiving-box {
+        padding: 1.25rem auto;
         width: 100%;
-        height: 100px;
+        height: 31.25rem;
+        border-radius: 1.25rem;
+        background-color: #ffffff;
+        box-shadow: 0 0 .5rem 0 rgba(68,68,68,.4);
+        margin-bottom: 4rem;
+    }
+
+    .archiving-box > span {
+        color:#000;
+    }
+
+    .footer {
+        width: 100%;
+        height: 6.25rem;
         background-color: #222;
         display: flex;
         align-items: center;
