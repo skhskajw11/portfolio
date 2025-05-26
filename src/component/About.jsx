@@ -7,7 +7,7 @@ import icon5 from '../imgs/icons5.png';
 const About = () => {
     return (
 <div className="about-container">
-            <p>ABOUT ME</p>
+            <p className="text">ABOUT ME</p>
             <div className="w-full flex flex-wrap justify-center gap-4">
                 <div className="icon-wrapper">
                     <img src={icon1} alt="icon1" className="icon" />

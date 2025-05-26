@@ -1,7 +1,7 @@
 const Skill = () => {
     return (
         <div className="skill-container">
-            <p>SKILL</p>
+            <p className="text">SKILL</p>
             <div className="skill-box">
                 <div className="category">
                     <h1>Language</h1>

@@ -56,7 +56,6 @@
         margin-left: 4rem;
     }
     .container {
-        position: relative;
         height: 100%; 
         padding-top: 5rem;
     }
@@ -86,12 +85,12 @@
         margin:  1.25rem 0 1.25rem 0;
     }
 
+    
     .div-container {
         margin: 0 auto;
-        padding-top: 3rem;
+        padding-top: 13rem;
         width: 60%; 
         height: 100%;
-        top: 0;
     }
     .about-container > p {
         font-family: 'GongGothicBold';
@@ -200,12 +199,13 @@
         text-align: center;
         color: #000;
         font-size: 2.75rem;
+        margin: 2rem;
     }
     .project-box {
         flex: 1 1 100%;
         max-width: 100%;
         gap: 2rem;
-        height: 29rem;
+        height: 20rem;
         border-radius:1.25rem;
         background-color: #ffffff;
         box-shadow: 0 0 .5rem 0 rgba(68,68,68,.4);
