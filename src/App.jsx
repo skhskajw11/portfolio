@@ -1,7 +1,7 @@
-import Header from './component/header'
-import MainImg from './component/MainImg'
-import Container from './component/Container'
-import Footer from './component/Footer'
+import Header from './component/header.jsx'
+import MainImg from './component/MainImg.jsx'
+import Container from './component/Container.jsx'
+import Footer from './component/Footer.jsx'
 
 function App() {
 

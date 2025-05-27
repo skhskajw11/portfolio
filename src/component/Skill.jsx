@@ -4,15 +4,15 @@ const Skill = () => {
             <p className="text">SKILL</p>
             <div className="skill-box">
                 <div className="category">
-                    <h1>Language</h1>
+                    <h1 className="p-5">Language</h1>
                     <div className="skills-list">
-                        <div className="language1 box "><span>JAVA</span></div>
+                        <div className="language1 box"><span>JAVA</span></div>
                         <div className="language2 box"><span className="skill">JavaScript</span></div>
                         <div className="language3 box"><span>GO</span></div>
                     </div>
                 </div>
                 <div className="category">
-                    <h1>Frontend</h1>
+                    <h1 className="p-5">Frontend</h1>
                     <div className="skills-list">
                         <div className="front1 box"><span>React (vite)</span></div>
                         <div className="front2 box"><span>Bootstrap</span></div>
@@ -21,7 +21,7 @@ const Skill = () => {
                     </div>
                 </div>
                 <div className="category">
-                    <h1>Backend</h1>
+                    <h1 className="p-5">Backend</h1>
                     <div className="skills-list">
                         <div className="back1 box"><span>Spring</span></div>
                         <div className="back2 box"><span>RESTful API</span></div>
