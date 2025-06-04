@@ -9,10 +9,18 @@ import Skill from "./Skill.jsx"
 const Container = () => {
     return (
         <div className="div-container">
-            <About />
-            <Skill />
-            <Projects />
-            <Archiving />
+            <section id="about" className="section">
+                <About />
+            </section>
+            <section id="skill" className="section">
+                <Skill />
+            </section>
+            <section id="projects" className="section">
+                <Projects />
+            </section>
+            <section id="archiving" className="section">
+                <Archiving />
+            </section>
         </div>
     )
 }

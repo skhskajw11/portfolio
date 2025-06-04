@@ -19,15 +19,11 @@ const Projects = () => {
                         </p>
                         <p className="text-gray-600 flex items-start">
                         <span className="text-blue-500 mr-2">⦁</span>
-                        nseMemo 및 Redis를 이용한 최적화
-                        </p>
-                        <p className="text-gray-600 flex items-start">
-                        <span className="text-blue-500 mr-2">⦁</span>
                         mui 프레임워크를 이용해 어드민 페이지의 수치화 및 그래프 구현
                         </p>
                         <p className="text-gray-700 font-medium">
                         <span className="font-bold">사용 기술: </span>
-                        React, Java, Mysql, jQuery, MVC, Jpa, Bootstrap, mui
+                        React, Java, Mysql, jQuery, Jpa, Bootstrap, mui
                         </p>
                         <p>
                         <a
