@@ -99,6 +99,34 @@ const Projects = () => {
                         </p>
                     </div>
                 </div>
+
+                <div className="project-box bg-blue-100 p-6"> 
+                <h2 className="text-2xl font-bold text-gray-800 mb-4">PBFT 구현 프로젝트</h2>
+                    <div className="space-y-3">
+                        <p className="text-gray-600 flex items-start">
+                        <span className="text-blue-500 mr-2">⦁</span>
+                        차세대에 소개될 web3의 기본인 pbft를 구현
+                        </p>
+                        <p className="text-gray-600 flex items-start">
+                        <span className="text-blue-500 mr-2">⦁</span>
+                        합의가 지속되도록 클라이언트에서 계속 요청
+                        </p>
+                        <p className="text-gray-700 font-medium">
+                        <span className="font-bold">사용 기술: </span>
+                        Go
+                        </p>
+                        <p>
+                        <a
+                            href="https://github.com/skhskajw11/pbft_Consensus_Algorithm"
+                            className="text-blue-600 hover:text-blue-800 font-medium underline transition-colors duration-200"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub 링크
+                        </a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </>
     )

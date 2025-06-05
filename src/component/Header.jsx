@@ -3,9 +3,9 @@ import '../styles/style.css';
 import '../styles/tailwindcss.css';
 
 const Header = () => {
-  const [activeTab, setActiveTab] = useState('home'); // 현재 활성화된 탭 추적
+  const [activeTab, setActiveTab] = useState('home'); 
 
-  // 탭 목록
+
   const tabs = [
     { name: 'About', id: 'about' },
     { name: 'Skills', id: 'skill' },
@@ -13,7 +13,7 @@ const Header = () => {
     { name: 'Archiving', id: 'archiving' },
   ];
 
-  // 스크롤 핸들러
+
   const handleTabClick = (e, tabId) => {
     e.preventDefault(); 
     setActiveTab(tabId); 
