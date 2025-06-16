@@ -27,7 +27,7 @@ const Projects = () => {
                         </p>
                         <p>
                         <a
-                            href="https://github.com/MasterRuma/MovieMall"
+                            href="https://github.com/MasterRuma/2_moviemall_public"
                             className="text-blue-600 hover:text-blue-800 font-medium underline transition-colors duration-200"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -59,7 +59,7 @@ const Projects = () => {
                         </p>
                         <p>
                         <a
-                            href="https://github.com/MasterRuma/MovieCR"
+                            href="https://github.com/MasterRuma/1_moviemall_public"
                             className="text-blue-600 hover:text-blue-800 font-medium underline transition-colors duration-200"
                             target="_blank"
                             rel="noopener noreferrer"
